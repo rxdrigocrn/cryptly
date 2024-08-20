@@ -23,7 +23,9 @@
     margin-top: 20px;
 
 }
-
+.faq-container p{
+    font-size: 16px;
+}
 .faq-container {
     max-width: 420px;
     letter-spacing: 0.5px;
@@ -54,7 +56,7 @@
 }
 
 .question-container p {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .question-container {
@@ -63,7 +65,7 @@
 }
 
 .answer {
-    max-width: 380px;
+    max-width: 350px;
     max-height: 0;
     overflow: hidden;
     transition: max-height ease-in-out 0.2s;

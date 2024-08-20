@@ -3,6 +3,7 @@ import "./Home.css"
 import Table from '../components/Table'
 import ChooseUs from '../components/ChooseUs'
 import Faq from '../components/Faq'
+import JoinUs from '../components/JoinUs'
 const Home = () => {
     return (
         <>
@@ -27,6 +28,9 @@ const Home = () => {
                 </section>
                 <section id='faq'>
                     <Faq/>
+                </section>
+                <section>
+                    <JoinUs/>
                 </section>
                </div>
             </div>

@@ -55,12 +55,11 @@
 }
 
 
-/* Desktops */
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  }
+/* 
+ @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  } 
   
-  /* Tablets (modo paisagem) */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 359) and (max-width: 1023px) {
     .card-container {
         display: flex;
         margin-bottom: 20px;
@@ -76,18 +75,15 @@
     }
   }
   
-  /* Tablets (modo retrato) */
   @media screen and (min-width: 600px) and (max-width: 767px) {
   }
   
-  /* Large Smartphones */
   @media screen and (min-width: 480px) and (max-width: 599px) {
   }
   
-  /* Medium Smartphones */
   @media screen and (min-width: 360px) and (max-width: 479px) {
   }
   
-  /* Small Smartphones */
   @media screen and (max-width: 359px) {
   }
+   */
