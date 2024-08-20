@@ -1,0 +1,52 @@
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 40px;
+    overflow: hidden;
+    border-bottom: 1px solid;
+    border-image: radial-gradient( #ffffff, #00000000) 1;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+
+.logo-container a{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo-container img{
+    height: 25px;
+    margin-right: 5px;
+}
+
+.navbar ul{
+    display: flex;
+    padding: 0;
+}
+
+.navbar ul li a{
+    display: flex;
+    padding: 0 35px;
+    cursor: pointer;
+    color: #f7f7f7cc;
+    font-size: 15px;
+}
+.navbar ul li a:hover{
+    color: #fff;
+}
+.social-container{
+    font-size: 20px;
+}
+.social-container .discord{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
