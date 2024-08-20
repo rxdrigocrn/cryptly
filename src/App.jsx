@@ -8,7 +8,7 @@ export const navItems = [
   { label: "Home", href: "#" },
   { label: "Market Update", href: "#" },
   { label: "Choose Us", href: "#" },
-  { label: "About Us", href: "#" },
+  { label: "Join Us", href: "#" },
 ];
 
 function App() {

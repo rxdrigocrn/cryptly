@@ -34,7 +34,7 @@
 .questions {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 440px;
     cursor: pointer;
 
 }
@@ -66,10 +66,10 @@
     max-width: 380px;
     max-height: 0;
     overflow: hidden;
+    transition: max-height ease-in-out 0.2s;
 }
 
 .answer.active {
-    height: auto;
-    max-height: 400px; /* Certifique-se de que o valor seja suficiente para o conteúdo */
-    transition: max-height 0.5s cubic-bezier(1,0,1,0);
+    max-height: 400px; 
+    transition: all ease-in-out 0.5s;
 }

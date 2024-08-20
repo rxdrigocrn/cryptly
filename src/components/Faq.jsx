@@ -17,10 +17,10 @@ const Faq = () => {
 
     const faqData = [
         { question: "What is Crypto exchange?", answer: "A crypto exchange is a digital trading platform that allows users to buy, sell and trade cryptocurrencies in exchange for fiat money or other digital currencies" },
-        { question: "What is Crypto exchange?", answer: "A crypto exchange is a digital trading platform that allows users to buy, sell and trade cryptocurrencies in exchange for fiat money or other digital currencies" },
-        { question: "What is Crypto exchange?", answer: "A crypto exchange is a digital trading platform that allows users to buy, sell and trade cryptocurrencies in exchange for fiat money or other digital currencies" },
-        { question: "What is Crypto exchange?", answer: "A crypto exchange is a digital trading platform that allows users to buy, sell and trade cryptocurrencies in exchange for fiat money or other digital currencies" },
-        { question: "What is Crypto exchange?", answer: "A crypto exchange is a digital trading platform that allows users to buy, sell and trade cryptocurrencies in exchange for fiat money or other digital currencies" },
+        { question: "What payment methods are available on Cryptly?", answer: "Cryptly supports a wide range of payment methods, including credit and debit cards, bank transfers, and popular digital wallets. We also accept various cryptocurrencies, allowing for seamless transactions directly from your crypto wallet." },
+        { question: "What security measures are in place on Cryptly?", answer: "Cryptly employs advanced security protocols to protect your assets and data. This includes multi-factor authentication (MFA), end-to-end encryption, and cold storage for the majority of funds. Our platform undergoes regular security audits and complies with industry standards to ensure the highest level of protection against potential threats." },
+        { question: "How does Cryptly ensure compliance with regulations?", answer: "Cryptly is fully committed to adhering to all relevant legal and regulatory requirements. We work closely with regulatory bodies to ensure compliance with KYC (Know Your Customer) and AML (Anti-Money Laundering) regulations. Our platform is designed to meet the highest standards in the industry, providing transparency and security for all users." },
+        { question: "How does Cryptly protect user privacy?", answer: "Cryptly safeguards user privacy with strong encryption and strict data protection practices. We ensure that personal information remains confidential and comply with global privacy regulations." },
     ];
 
     return (
