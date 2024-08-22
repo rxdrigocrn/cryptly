@@ -90,3 +90,17 @@
     align-items: center;
     flex-direction: column;
 }
+
+@media screen and (max-width: 530px) {
+    #intro p{
+        font-size: 12px;
+        max-width: 300px;
+    }
+    #intro h1 {
+        font-size: 36px;
+    }
+    
+    .email-container input {
+        padding: 16px 0px 17px 20px !important;
+    }
+}

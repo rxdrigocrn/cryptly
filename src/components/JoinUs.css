@@ -5,24 +5,31 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 70px 0px;   
+    padding: 70px 0px;
     border-radius: 14px;
     position: relative;
     background-color: #0e0b2c;
+    max-width: fit-content;
+    padding: 100px 200px;
+    margin: 150px auto;
 }
-.joinUs-container::after, .joinUs-container::before{
+
+.joinUs-container::after,
+.joinUs-container::before {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(purple,white,purple,white,purple);
+    background-image: conic-gradient(purple, white, purple, white, purple);
     z-index: -1;
     padding: 2px;
     border-radius: 14px;
 }
-.joinUs-container::before{
+
+.joinUs-container::before {
     filter: blur(1rem);
 }
+
 .newsletter-control {
     max-width: 550px;
 }
@@ -74,4 +81,89 @@
 .email-container button:hover {
     transition: background-image 3s ease-in-out;
     background-image: linear-gradient(to bottom, #531a9e, #c079fa);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .joinUs-container {
+        padding: 100px 150px;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .joinUs-container {
+        padding: 100px 90px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .joinUs-container {
+        padding: 50px 10px;
+    }
+
+    .newsletter-control {
+        max-width: 400px;
+    }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+    .joinUs-container {
+        padding: 50px 20px;
+    }
+
+    .newsletter-control {
+        max-width: 200px;
+    }
+
+    .newsletter-control span {
+        font-size: 10px;
+    }
+
+    .newsletter-control h2 {
+        font-size: 30px;
+    }
+
+    .newsletter-control p {
+        font-size: 12px;
+        flex: wrap;
+    }
+
+    .email-container {
+        border: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .email-container input {
+        padding: 16px 100px 17px 20px;
+    }
+
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 479px) {
+    .joinUs-container {
+        padding: 50px 20px;
+    }
+
+    .newsletter-control {
+        max-width: 250px;
+    }
+
+    .newsletter-control span {
+        font-size: 10px;
+    }
+
+    .newsletter-control h2 {
+        font-size: 30px;
+    }
+
+    .newsletter-control p {
+        font-size: 12px;
+        flex: wrap;
+    }
+
+    .email-container input {
+        padding: 16px 0px 17px 20px;
+    }
+
 }

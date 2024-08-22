@@ -13,6 +13,11 @@
     letter-spacing: 0.5px;
 }
 
+.table-body span {
+    margin-right: 3px;
+    color: #fff;
+}
+
 .table-control {
     margin-top: 40px;
 }
@@ -45,8 +50,8 @@ th {
     backdrop-filter: blur(7px);
     width: 100%;
     box-shadow: 0 .4rem .8rem rgba(37, 37, 37, 0.333);
+    overflow-x: auto;
 }
-
 
 thead tr {
     font-size: 16px;
@@ -56,4 +61,78 @@ thead tr {
 td {
     font-size: 16px;
     padding: 18px 60px;
+}
+
+@media screen and (max-width: 1200px) {
+    .table-body {
+        overflow-x: auto;
+        max-width: 100%;
+    }
+
+    table tr {
+        font-size: 14px;
+    }
+
+    .table-body td {
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .table-body table {
+        width: 600px;
+    }
+
+    .table-body table {
+        margin: 10px;
+    }
+
+    table tr {
+        font-size: 12px;
+    }
+    table td {
+        font-size: 10px;
+    }
+    .table-body td {
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .table-body table {
+        width: fit-content;
+        margin: 10px;
+    }
+
+    table tr {
+        font-size: 12px;
+    }
+
+    table td {
+        font-size: 10px;
+    }
+
+    .table-body td {
+        padding: 10px 25px;
+    }
+    
+    td:nth-child(4), 
+    th:nth-child(4), 
+    td:nth-child(5), 
+    th:nth-child(5) { 
+        display: none;
+    }
+
+    td:nth-child(1) {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+        justify-content: center; 
+        margin: 0 auto;
+    }
+    
+    td img {
+        margin: 5px auto;
+    }
 }

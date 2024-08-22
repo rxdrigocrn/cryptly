@@ -37,10 +37,10 @@ const Table = ({ coins }) => {
                                 <tr key={coin.id} onClick={() => handleRowClick(coin.id)}>
                                     <td><img src={coin.image} alt="" />{coin.name}</td>
                                     <td>{coin.symbol.toUpperCase()}</td>
-                                    <td>$ {coin.current_price.toFixed(2)}</td>
+                                    <td><span>$</span>{coin.current_price.toFixed(2)}</td>
                                     <td style={{ color: coin.market_cap_change_percentage_24h < 0 ? 'red' : 'green' }}>{coin.market_cap_change_percentage_24h.toFixed(2)}
                                     </td>
-                                    <td>$ {coin.market_cap.toLocaleString()}</td>
+                                    <td><span>$</span>{coin.market_cap.toLocaleString()}</td>
                                 </tr>
                             ))}
                         </tbody>

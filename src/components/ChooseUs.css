@@ -21,23 +21,18 @@
 .card {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     box-sizing: border-box;
 }
-
-
 
 .card-container {
     border: 1px solid #c6c6c652;
     padding: 20px;
     border-radius: 14px;
-    max-width: 300px;
     margin: 0 10px;
-    display: flex; /* Muda para flexbox */
-    flex-direction: column; /* Organiza os itens verticalmente */
     overflow: hidden;
     box-shadow: 0 .4rem .8rem rgba(58, 57, 61, 0.333);
 }
+
 .card-image img {
     margin: 0 auto;
     width: 100%;
@@ -59,21 +54,6 @@
  @media screen and (min-width: 1024px) and (max-width: 1439px) {
   } 
   
-  @media screen and (min-width: 359) and (max-width: 1023px) {
-    .card-container {
-        display: flex;
-        margin-bottom: 20px;
-    }
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 350px;
-        margin: 0 auto;
-    }
-  }
   
   @media screen and (min-width: 600px) and (max-width: 767px) {
   }
@@ -87,3 +67,36 @@
   @media screen and (max-width: 359px) {
   }
    */
+
+
+@media screen and (max-width: 1023px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 15px auto;
+    } 
+}
+
+@media screen and (max-width: 767px) {
+    .chooseUs span {
+        font-size: 10px;
+    }
+    
+    .chooseUs h2 {
+        font-size: 30px;
+        max-width: 300px;
+        margin: 40px auto;
+        text-align: center;
+        flex: wrap;
+    }
+}
