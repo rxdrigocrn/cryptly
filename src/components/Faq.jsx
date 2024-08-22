@@ -34,7 +34,7 @@ const Faq = () => {
                 <div className="questions">
 
                     {faqData.map((item, i) =>
-                        <div className="question-container">
+                        <div className="question-container" key={i}>
                             <div className="question" onClick={() => toggle(i)}>
                                 <h5>{item.question}</h5>
                                 <button>{selected == i ? <FiMinusCircle/> : <GoPlusCircle/> }</button>

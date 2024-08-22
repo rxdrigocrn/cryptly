@@ -1,4 +1,4 @@
-.table-container{
+.table-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,35 +6,39 @@
     margin-bottom: 150px;
 }
 
-.table-container span{
+.table-container span {
     font-size: 14px;
     font-weight: bold;
     color: #c498e9;
     letter-spacing: 0.5px;
 }
-.table-control{
-    margin-top: 40px;    
+
+.table-control {
+    margin-top: 40px;
 }
-.table-header h2{
-    font-size: 40px; 
+
+.table-header h2 {
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 }
 
-td img{
+td img {
     width: 36px;
     height: 36px;
-    margin-right: 5px;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
-.table-body table,td,th{
+.table-body table,
+td,
+th {
     padding: 1rem;
 }
 
-.table-body table{
+.table-body table {
     border: 1px solid rgb(130, 128, 131);
     border-radius: 14px;
     background-color: #f7f7f707;
@@ -44,5 +48,12 @@ td img{
 }
 
 
+thead tr {
+    font-size: 16px;
+    color: #d8d8d8;
+}
 
-
+td {
+    font-size: 16px;
+    padding: 18px 60px;
+}

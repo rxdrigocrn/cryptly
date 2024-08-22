@@ -4,7 +4,9 @@ import Table from '../components/Table'
 import ChooseUs from '../components/ChooseUs'
 import Faq from '../components/Faq'
 import JoinUs from '../components/JoinUs'
-const Home = () => {
+
+
+const Home = ({coins}) => {
     return (
         <>
             <div className="main-container">
@@ -21,7 +23,7 @@ const Home = () => {
                     </div>
                 </section>
                 <section id='table-container'>
-                  <Table/>
+                  <Table coins={coins} />
                 </section>
                 <section id='choose-us'>
                     <ChooseUs/>
@@ -29,7 +31,7 @@ const Home = () => {
                 <section id='faq'>
                     <Faq/>
                 </section>
-                <section>
+                <section id='newsletter'>
                     <JoinUs/>
                 </section>
                </div>
