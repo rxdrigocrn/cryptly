@@ -36,7 +36,6 @@ const MenuMobile = () => {
             <div className="menu-mobile">
                 <button className='menu-toggle' onClick={toggleMenu}>{isOpen ? <IoCloseOutline /> : <IoIosMenu />}</button>
                 <nav className={`menu ${isOpen ? 'open' : ''}`}>
-
                     <ul>
                         {navItems.map((item, index) => (
                             <li key={index} onClick={closeMenu}>
@@ -46,7 +45,6 @@ const MenuMobile = () => {
                             </li>
                         ))}
                     </ul>
-
                 </nav>
             </div>
 
