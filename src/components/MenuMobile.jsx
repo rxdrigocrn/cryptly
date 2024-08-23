@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { IoIosMenu} from "react-icons/io";
+import { IoIosMenu } from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
 import "./MenuMobile.css"
 import { navItems } from '../App'
@@ -34,8 +34,9 @@ const MenuMobile = () => {
     return (
         <>
             <div className="menu-mobile">
-                <button className='menu-toggle' onClick={toggleMenu}>{isOpen ? <IoCloseOutline /> :<IoIosMenu />}</button>
+                <button className='menu-toggle' onClick={toggleMenu}>{isOpen ? <IoCloseOutline /> : <IoIosMenu />}</button>
                 <nav className={`menu ${isOpen ? 'open' : ''}`}>
+
                     <ul>
                         {navItems.map((item, index) => (
                             <li key={index} onClick={closeMenu}>
@@ -45,6 +46,7 @@ const MenuMobile = () => {
                             </li>
                         ))}
                     </ul>
+
                 </nav>
             </div>
 
