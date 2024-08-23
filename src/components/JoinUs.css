@@ -125,7 +125,7 @@
     }
 
     .newsletter-control p {
-        font-size: 12px;
+        font-size: 14px;
         flex: wrap;
     }
 
@@ -134,7 +134,7 @@
     }
 
     .email-container input {
-        padding: 16px 100px 17px 20px;
+        padding: 16px 30px 17px 20px;
     }
 
 }
