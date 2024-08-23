@@ -1,0 +1,32 @@
+.coin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height:120px;
+    margin-bottom: 25px;
+}
+.coin-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.coin-detail h1{
+    margin-bottom: 100px;
+    font-size: 48px;
+}
+.coin-detail p{
+    font-size: 18px;
+}
+
+.coin-specific{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 16px;
+}
