@@ -26,10 +26,10 @@
 .menu {
     display: none;
     position: fixed;
-    top: -60px;
+    top: -50px;
     left: 0;
     width: 100%; 
-    height: calc(100% + 60px); 
+    height: calc(100% + 50px); 
     color: #e2e2e2; 
     background-color: #333; 
     z-index: 1000; 

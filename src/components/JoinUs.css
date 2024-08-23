@@ -137,16 +137,15 @@
         padding: 16px 100px 17px 20px;
     }
 
-
 }
 
 @media screen and (max-width: 379px) {
     .joinUs-container {
-        padding: 50px 10px;
+        padding: 30px 14px;
     }
 
     .newsletter-control {
-        max-width: 220px;
+        max-width: 180px;
     }
 
     .newsletter-control span {
@@ -158,11 +157,20 @@
     }
 
     .newsletter-control p {
-        font-size: 12px;
+        font-size: 10px;
         flex: wrap;
     }
 
+    .email-container button {
+        padding: 10px 10px;
+        font-size: 8px;
+        margin: 1px 1px !important;
+    }
 
+    .email-container input {
+        padding: 11px 0px 11px 5px !important;
+        font-size: 8px;
+    }
 
 
 }
