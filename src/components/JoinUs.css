@@ -107,7 +107,7 @@
 }
 
 
-@media screen and (min-width: 480px) and (max-width: 599px) {
+@media screen and (max-width: 599px) {
     .joinUs-container {
         padding: 50px 20px;
     }
@@ -140,7 +140,7 @@
 
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 379px) {
     .joinUs-container {
         padding: 50px 10px;
     }
