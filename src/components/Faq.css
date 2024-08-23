@@ -37,15 +37,17 @@
     flex-direction: column;
     width: 440px;
     cursor: pointer;
-
 }
-
+.questions:focus, .question:focus{
+    outline: none;
+    box-shadow: none;
+    
+}
 .question {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ffffff6e;
     margin-bottom: 10px;
-
 }
 
 .question-container h5 {
