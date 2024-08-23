@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { IoIosMenu} from "react-icons/io";
 import { IoCloseOutline } from "react-icons/io5";
 import "./MenuMobile.css"
@@ -14,9 +14,23 @@ const MenuMobile = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen)
     }
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+
+        return () => {
+            document.body.classList.remove('no-scroll');
+        }
+    }, [isOpen])
+
     const closeMenu = () => {
         setIsOpen(false)
     }
+
     return (
         <>
             <div className="menu-mobile">

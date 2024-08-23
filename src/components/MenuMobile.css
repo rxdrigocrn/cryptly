@@ -6,7 +6,7 @@
 }
 
 .menu-toggle {
-    font-size: 48px;
+    font-size: 36px;
     display: none; 
     background-color: transparent; 
     color: #e2e2e2; 
@@ -14,9 +14,15 @@
     cursor: pointer; 
     position: fixed; 
     top: 15px;
-    right: 15px; 
+    right: 10px; 
     z-index: 1002; 
     outline: none;
+}
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
 }
 
 .menu {
@@ -63,14 +69,9 @@
 .menu a:hover {
     background: #444;
 }
+
 @media screen and (max-width: 1023px) {
     .menu-toggle {
         display: block; 
     }
-    
-}
-
-
-body.menu-open {
-    overflow: hidden;
 }
