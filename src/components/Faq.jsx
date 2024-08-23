@@ -5,10 +5,10 @@ import { FiMinusCircle } from "react-icons/fi";
 
 
 const Faq = () => {
-    const [selected,setSelected] = useState(null)
+    const [selected, setSelected] = useState(null)
 
     const toggle = (i) => {
-        if(selected == i){
+        if (selected == i) {
             return setSelected(null)
         }
 
@@ -32,18 +32,17 @@ const Faq = () => {
                     <p>We tried to provide answers to some commom questions about Cryptly. If you dont find the answer to your question here, please feel free to email us at cryptly@cryptlyfaq.com and we will do our best to help you out </p>
                 </div>
                 <div className="questions">
-
-                    {faqData.map((item, i) =>
+                    {faqData.map((item, i) => (
                         <div className="question-container" key={i}>
                             <div className="question" onClick={() => toggle(i)}>
                                 <h5>{item.question}</h5>
-                                <button>{selected == i ? <FiMinusCircle/> : <GoPlusCircle/> }</button>
+                                <button>{selected === i ? <FiMinusCircle /> : <GoPlusCircle />}</button>
                             </div>
-                            <div className={selected == i ? 'answer.active' : 'answer'}>
+                            <div className={`answer ${selected === i ? 'active' : ''}`}>
                                 <p>{item.answer}</p>
                             </div>
                         </div>
-                    )}
+                    ))}
                 </div>
 
 

@@ -67,12 +67,12 @@
     max-width: 350px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height ease-in-out 0.2s;
+    transition: max-height 0.3s ease-in-out;
 }
 
 .answer.active {
     max-height: 400px; 
-    transition: all ease-in-out 0.5s;
+    transition: max-height 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1175px) {
