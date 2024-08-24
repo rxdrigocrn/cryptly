@@ -35,7 +35,7 @@ const Faq = () => {
             duration: 1,
             scrollTrigger: {
               trigger: ".faq-container",
-              start: "top 0",
+              start: "top 30%",
               end: "bottom -30%",
             },
           });
@@ -46,7 +46,7 @@ const Faq = () => {
             duration: 1,
             scrollTrigger: {
               trigger: ".questions",
-              start: "top 0",
+              start: "top 30%",
               end: "bottom -30%",
             },
           });

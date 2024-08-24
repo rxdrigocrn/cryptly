@@ -6,6 +6,8 @@ import Coin from './pages/Coin'
 import axios from 'axios'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
 
 export const navItems = [
   { label: "Home", href: "/#intro" },
@@ -37,6 +39,17 @@ function App() {
   // useEffect(() => {
   //   console.log('Coins data:', coins); 
   // }, [coins]);
+
+
+   const location = useLocation();
+
+    useEffect(() => {
+      if (location.pathname === '/#intro') {
+        window.scrollTo(0, 0);
+      }
+    }, [location]);
+
+
 
   return (
     <>
