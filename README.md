@@ -1,6 +1,6 @@
 # Criptly
 
-Criptly é uma aplicação web desenvolvida em React para acompanhar e gerenciar criptomoedas. A aplicação utiliza React Router para navegação, Axios para consumo de uma API de criptomoedas e GSAP para animações avançadas.
+Criptly é uma aplicação web desenvolvida em React para acompanhar e gerenciar criptomoedas. A aplicação utiliza React Router para navegação, Axios para consumo de uma API de criptomoedas e GSAP para animações.
 
 ## Funcionalidades
 
