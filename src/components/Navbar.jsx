@@ -48,10 +48,10 @@ const Navbar = () => {
         <div className="navbar-wrapper">
           <nav className='navbar'>
             <div className="logo-container">
-              <a href="#">
+              <ScrollToSectionLink to="/#intro">
                 <img src={logo} alt="logo" />
                 <span>Cryptly</span>
-              </a>
+              </ScrollToSectionLink>
             </div>
             <ul>
               {navItems.map((item, index) => (

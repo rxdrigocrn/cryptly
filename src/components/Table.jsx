@@ -20,6 +20,7 @@ const Table = ({ coins }) => {
             <div className="table-control">
                 <div className="table-header">
                     <h2>Trending coins</h2>
+                    <p>Click on the coin to see more details</p>
                 </div>
                 <div className="table-body">
                     <table>
