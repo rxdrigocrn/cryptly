@@ -22,18 +22,18 @@ const Navbar = () => {
   useEffect(() => {
     if (isOpen) {
         document.body.style.overflow = 'hidden';
-        document.body.style.position = 'fixed'; // Fix the position to avoid scroll
-        document.body.style.width = '100%'; // Prevent width change when scroll is hidden
+        document.body.style.position = 'relative';
+        document.body.style.width = '100%'; 
     } else {
         document.body.style.overflow = 'auto';
-        document.body.style.position = ''; // Reset position
-        document.body.style.width = ''; // Reset width
+        document.body.style.position = ''; 
+        document.body.style.width = ''; 
     }
 
     return () => {
-        document.body.style.overflow = 'auto'; // Reset overflow on component unmount
-        document.body.style.position = ''; // Reset position on component unmount
-        document.body.style.width = ''; // Reset width on component unmount
+        document.body.style.overflow = 'auto'; 
+        document.body.style.position = ''; 
+        document.body.style.width = ''; 
     };
 }, [isOpen]);
 

@@ -31,7 +31,7 @@
     letter-spacing: 0.5px;
     margin-right: 40px;
     opacity: 0;
-    transform: translateX(-300px);
+    transform: translateX(-200px);
 }
 
 .questions {
@@ -39,7 +39,7 @@
     flex-direction: column;
     width: 440px;
     cursor: pointer;
-    transform: translateX(+300px);
+    transform: translateX(200px);
     opacity: 0;
 }
 
