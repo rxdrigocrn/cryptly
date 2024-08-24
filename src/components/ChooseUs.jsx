@@ -2,6 +2,7 @@ import React from 'react'
 import wallet from "../assets/wallet.png"
 import banks from "../assets/banks.png"
 import okay from "../assets/okay.png"
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import "./ChooseUs.css"
 
 import { useLayoutEffect } from 'react'
@@ -11,21 +12,23 @@ const ChooseUs = () => {
 
 
   useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".chooseUs",
-          start: "top -10%", 
-          end: "bottom -50%",
-        },
-        defaults: { duration: 0.8 }
-      });
 
-      tl.to(".card1", { x: 0, opacity: 1 })
-        .to(".card2", { y: 0, opacity: 1 }, "-=0.3")
-        .to(".card3", { x: 0, opacity: 1 }, "-=0.3");
+    gsap.registerPlugin(ScrollTrigger);
+
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".chooseUs",
+        start: "top -10%",
+        end: "bottom -50%",
+      },
+      defaults: { duration: 0.8 }
     });
-    return () => ctx.revert(); 
+
+    tl.to(".card1", { x: 0, opacity: 1 })
+      .to(".card2", { y: 0, opacity: 1 }, "-=0.3")
+      .to(".card3", { x: 0, opacity: 1 }, "-=0.3");
+
   }, []);
 
   return (
