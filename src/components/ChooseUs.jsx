@@ -19,7 +19,6 @@ const ChooseUs = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".chooseUs",
-        markers:true,
         start: "top -30%",
         end: "bottom -50%",
       },
