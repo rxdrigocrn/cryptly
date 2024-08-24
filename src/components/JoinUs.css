@@ -7,28 +7,16 @@
     text-align: center;
     padding: 70px 0px;
     border-radius: 14px;
-    position: relative;
+    border: 1px solid #d8d8d8;
     background-color: #06041b;
     max-width: fit-content;
     padding: 100px 200px;
     margin: 150px auto;
+    opacity: 0;
+    transform: translateY(100px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.joinUs-container::after,
-.joinUs-container::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: conic-gradient(purple, white, purple, white, purple);
-    z-index: -1;
-    padding: 2px;
-    border-radius: 14px;
-}
-
-.joinUs-container::before {
-    filter: blur(1rem);
-}
 
 .newsletter-control {
     max-width: 550px;

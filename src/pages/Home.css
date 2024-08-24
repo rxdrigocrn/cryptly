@@ -25,6 +25,7 @@
     color: #fff;
     margin-top: 200px;
     margin-bottom: 30px;
+
 }
 
 #intro h1 .gradient {
@@ -51,6 +52,11 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+}
+
+#intro h1, #intro p, .email-container{
+    transform: translateY(100px);
+    opacity: 0;
 }
 
 .email-container {

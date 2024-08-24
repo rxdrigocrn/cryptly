@@ -4,9 +4,23 @@ import Table from '../components/Table'
 import ChooseUs from '../components/ChooseUs'
 import Faq from '../components/Faq'
 import JoinUs from '../components/JoinUs'
-
+import { gsap } from 'gsap'
+import { useLayoutEffect } from 'react'
 
 const Home = ({coins}) => {
+
+
+    useLayoutEffect(() => {
+        const tl = gsap.timeline({
+            defaults: { duration: 0.5 }
+          });
+    
+          tl.to("#intro h1", { y: 0, opacity: 1 })
+            .to("#intro p", { y: 0, opacity: 1 }, "-=0.3")
+            .to(".email-container", { y: 0, opacity: 1 }, "-=0.3");
+    },[])
+
+
     return (
         <>
             <div className="main-container">

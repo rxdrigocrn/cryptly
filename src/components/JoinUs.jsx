@@ -1,6 +1,24 @@
 import React from 'react'
 import "./JoinUs.css"
+import gsap from 'gsap'
+import { useLayoutEffect } from 'react'
 const JoinUs = () => {
+
+  useLayoutEffect(() => {
+    gsap.to(".joinUs-container", {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".joinUs-container",
+        start: "top 10%",
+        end: "bottom -10%",
+      },
+    });
+
+
+},[])
+
   return (
     <>
       <div className="joinUs-container">

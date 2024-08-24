@@ -30,6 +30,8 @@
     max-width: 420px;
     letter-spacing: 0.5px;
     margin-right: 40px;
+    opacity: 0;
+    transform: translateX(-300px);
 }
 
 .questions {
@@ -37,7 +39,10 @@
     flex-direction: column;
     width: 440px;
     cursor: pointer;
+    transform: translateX(+300px);
+    opacity: 0;
 }
+
 .questions:focus, .question:focus{
     outline: none;
     box-shadow: none;
@@ -63,6 +68,7 @@
 .question-container {
     margin-bottom: 15px;
     line-height: 20px;
+ 
 }
 
 .answer {

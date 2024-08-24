@@ -34,9 +34,9 @@ function App() {
     fetchCoins()
   }, [])
 
-  useEffect(() => {
-    console.log('Coins data:', coins); 
-  }, [coins]);
+  // useEffect(() => {
+  //   console.log('Coins data:', coins); 
+  // }, [coins]);
 
   return (
     <>

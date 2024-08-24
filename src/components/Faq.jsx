@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useLayoutEffect } from 'react'
 import "./Faq.css"
 import { GoPlusCircle } from "react-icons/go";
 import { FiMinusCircle } from "react-icons/fi";
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 
 const Faq = () => {
@@ -22,6 +24,39 @@ const Faq = () => {
         { question: "How does Cryptly ensure compliance with regulations?", answer: "Cryptly is fully committed to adhering to all relevant legal and regulatory requirements. We work closely with regulatory bodies to ensure compliance with KYC (Know Your Customer) and AML (Anti-Money Laundering) regulations. Our platform is designed to meet the highest standards in the industry, providing transparency and security for all users." },
         { question: "How does Cryptly protect user privacy?", answer: "Cryptly safeguards user privacy with strong encryption and strict data protection practices. We ensure that personal information remains confidential and comply with global privacy regulations." },
     ];
+
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+    
+          gsap.to(".faq-container", {
+            x: 0,
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+              trigger: ".faq-container",
+              start: "top 0",
+              end: "bottom -30%",
+            },
+          });
+    
+          gsap.to(".questions", {
+            x: 0,
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+              trigger: ".questions",
+              start: "top 0",
+              end: "bottom -30%",
+            },
+          });
+    
+      }, []);
+    
+      
+
+
+
 
     return (
         <>
