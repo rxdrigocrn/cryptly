@@ -32,7 +32,10 @@ function App() {
       } catch (error) {
         console.log(error)
       }
+      ScrollTrigger.refresh();
     }
+
+
     fetchCoins()
   }, [])
 

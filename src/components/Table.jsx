@@ -1,7 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import "./Table.css"
-
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import { useEffect } from 'react'
 
 
 const Table = ({ coins }) => {
@@ -13,6 +14,9 @@ const Table = ({ coins }) => {
         navigate(`coin/${coinId}`)
     }
 
+    useEffect(() => {
+        ScrollTrigger.refresh();
+    }, [coins]);
 
     return (
         <div className='table-container'>
