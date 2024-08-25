@@ -11,8 +11,7 @@ const JoinUs = () => {
       duration: 1,
       scrollTrigger: {
         trigger: ".joinUs-container",
-        start: "top 70%",
-        end: "bottom -10%",
+        start: "top 59%",
       },
     });
 
