@@ -21,10 +21,9 @@ const ChooseUs = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".chooseUs",
-        start: "top 50%",
+        start: "top 65%",
         end: "bottom 65%",
         scrub:true,
-        markers:true
       },
       defaults: { duration: 0.8 }
     });
@@ -32,7 +31,6 @@ const ChooseUs = () => {
     tl.to(".card1", { x: 0, opacity: 1 })
       .to(".card2", { y: 0, opacity: 1 }, "-=0.3")
       .to(".card3", { x: 0, opacity: 1 }, "-=0.3");
-
 
   }, [location]);
 
