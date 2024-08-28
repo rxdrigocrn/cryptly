@@ -10,7 +10,7 @@ const Table = ({ coins }) => {
     const navigate = useNavigate()
 
     const handleRowClick = (coinId) => {
-        console.log('Clicked coin ID:', coinId);  // Verifique se este log aparece no console
+        console.log('Clicked coin ID:', coinId); 
         navigate(`coin/${coinId}`)
     }
 
