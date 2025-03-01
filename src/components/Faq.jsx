@@ -59,7 +59,7 @@ const Faq = () => {
 
     return (
         <>
-            <div className="faq">
+            <div className="faq" >
                 <div className="faq-container">
                     <span>YOU MIGHT ASK</span>
                     <h2>FAQ</h2>

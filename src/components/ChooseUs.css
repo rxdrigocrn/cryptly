@@ -38,16 +38,21 @@
 .card3 {
     opacity: 0;
     transform: translateX(200px);
+    transition: opacity 1.5s ease-out, transform 1s ease-out;
 }
 
 .card1 {
     opacity: 0;
     transform: translateX(-200px);
+    transition: opacity 1.5s ease-out, transform 1s ease-out;
+
 }
 
 .card2 {
     opacity: 0;
     transform: translateY(200px);
+    transition: opacity 1.5s ease-out, transform 1s ease-out;
+
 }
 
 .card-image img {
@@ -64,13 +69,6 @@
 .card-text p {
     font-size: 14px;
     width: 250px;
-}
-
-
-.card-container {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1.5s ease-out, transform 1s ease-out;
 }
 
 

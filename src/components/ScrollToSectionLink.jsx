@@ -6,10 +6,12 @@ const ScrollToSectionLink = ({ to, children }) => {
 
   useEffect(() => {
     if (location.hash) {
-      const element = document.querySelector(location.hash);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      setTimeout(() => { 
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
     }
   }, [location]);
 
@@ -19,4 +21,5 @@ const ScrollToSectionLink = ({ to, children }) => {
     </Link>
   );
 };
+
 export default ScrollToSectionLink;
