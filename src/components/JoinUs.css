@@ -15,7 +15,10 @@
     opacity: 0;
     transform: translateY(100px);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: opacity 1.5s ease-out, transform 1s ease-out;
 }
+
+
 
 
 .newsletter-control {

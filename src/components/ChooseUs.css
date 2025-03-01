@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
- 
+
 }
 
 
@@ -34,16 +34,19 @@
     overflow: hidden;
     box-shadow: 0 .4rem .8rem rgba(58, 57, 61, 0.333);
 }
-.card3{
-    opacity: 0;   
-    transform: translateX(200px); 
-  }
-.card1{
-    opacity: 0;   
+
+.card3 {
+    opacity: 0;
+    transform: translateX(200px);
+}
+
+.card1 {
+    opacity: 0;
     transform: translateX(-200px);
 }
-.card2{
-    opacity: 0;   
+
+.card2 {
+    opacity: 0;
     transform: translateY(200px);
 }
 
@@ -62,6 +65,14 @@
     font-size: 14px;
     width: 250px;
 }
+
+
+.card-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1s ease-out;
+}
+
 
 
 /* 
@@ -98,14 +109,14 @@
         flex-direction: column;
         text-align: center;
         margin: 15px auto;
-    } 
+    }
 }
 
 @media screen and (max-width: 767px) {
     .chooseUs span {
         font-size: 10px;
     }
-    
+
     .chooseUs h2 {
         font-size: 30px;
         max-width: 300px;

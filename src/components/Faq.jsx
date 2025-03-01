@@ -28,35 +28,32 @@ const Faq = () => {
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-    
-          gsap.to(".faq-container", {
-            x: 0,
-            opacity: 1,
-            duration: 1,
-            scrollTrigger: {
-              trigger: ".faq-container",
-              start: "top 70%",
-              end: "bottom 80%",
-              scrub:true,
-            },
-          });
-    
-          gsap.to(".questions", {
-            x: 0,
-            opacity: 1,
-            duration: 1,
-            scrollTrigger: {
-              trigger: ".questions",
-              start: "top 70%",
-              end: "bottom 80%",
-              scrub:true,
-            },
-          });
-    
-      }, []);
-    
-      
 
+        gsap.to(".faq-container", {
+            x: 0,
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".faq-container",
+                start: "top 70%",
+                end: "bottom 80%",
+                scrub: true,
+            },
+        });
+
+        gsap.to(".questions", {
+            x: 0,
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".questions",
+                start: "top 70%",
+                end: "bottom 80%",
+                scrub: true,
+            },
+        });
+
+    }, []);
 
 
 

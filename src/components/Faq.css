@@ -23,9 +23,11 @@
     margin-top: 20px;
 
 }
-.faq-container p{
+
+.faq-container p {
     font-size: 16px;
 }
+
 .faq-container {
     max-width: 420px;
     letter-spacing: 0.5px;
@@ -43,11 +45,13 @@
     opacity: 0;
 }
 
-.questions:focus, .question:focus{
+.questions:focus,
+.question:focus {
     outline: none;
     box-shadow: none;
-    
+
 }
+
 .question {
     display: flex;
     justify-content: space-between;
@@ -68,7 +72,7 @@
 .question-container {
     margin-bottom: 15px;
     line-height: 20px;
- 
+
 }
 
 .answer {
@@ -79,24 +83,33 @@
 }
 
 .answer.active {
-    max-height: 400px; 
+    max-height: 400px;
     transition: max-height 0.5s ease-in-out;
 }
 
+.faq-container,
+.questions {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1s ease-out;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1175px) {
-    .faq{
+    .faq {
         padding: 20px;
     }
 }
+
 @media screen and (max-width: 1023px) {
-    .faq{
+    .faq {
         padding: 20px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 100px;
     }
-    .faq-container{
+
+    .faq-container {
         text-align: center;
         margin: 0px auto;
         margin-bottom: 80px;
@@ -104,10 +117,11 @@
 }
 
 @media screen and (max-width: 479px) {
-    .faq-container{
+    .faq-container {
         max-width: 300px;
     }
-    .questions{
+
+    .questions {
         max-width: 300px;
     }
 }
